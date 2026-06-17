@@ -1,331 +1,491 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="id" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JUNA | Portfolio</title>
   <link rel="shortcut icon" href="favicon/favicon.ico.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Portofolio Al junaid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
 
-<header class="w-full fixed top-0 left-0 bg-transparent backdrop-blur-xl z-50 transition-all duration-300">
-  <nav class="bg-transparent top-0 p-1">
-    <div class="flex justify-between items-center">
-      <div class="relative z-10 pl-6 flex items-center">
-        <a href="intro.html">
-          <img src="images/gambar al juna.png" alt="logo" class="w-14 h-14 object-cover rounded-full">
-        </a>
-        <p class="text-white font-bold">AL<span class="text-orange-400"> JUNA</span>ID</p>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+  <!-- ══════════════════════════ NAVBAR ══════════════════════════ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-50 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="text-sm font-semibold tracking-widest uppercase text-gray-900">AL JUNAID</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#about" class="text-xs tracking-widest uppercase text-gray-500 hover:text-gray-900 transition-colors duration-200">About</a>
+        <a href="#skills" class="text-xs tracking-widest uppercase text-gray-500 hover:text-gray-900 transition-colors duration-200">Skills</a>
+        <a href="#projects" class="text-xs tracking-widest uppercase text-gray-500 hover:text-gray-900 transition-colors duration-200">Projects</a>
+        <a href="#footer" class="text-xs tracking-widest uppercase text-gray-500 hover:text-gray-900 transition-colors duration-200">Contact</a>
       </div>
-
-      <input type="checkbox" id="menu-toggle" class="hidden peer" />
-      <label for="menu-toggle" class="md:hidden cursor-pointer mr-4 z-50">
-        <div class="w-8 h-1 bg-white mb-1 transition-all peer-checked:rotate-45 peer-checked:translate-y-2"></div>
-        <div class="w-8 h-1 bg-white mb-1 transition-all peer-checked:opacity-0"></div>
-        <div class="w-8 h-1 bg-white transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2"></div>
-      </label>
-
-      <div class="md:hidden 
-                  absolute left-0 w-full bg-black/60 backdrop-blur-xl 
-                  flex flex-col items-center gap-6 py-6 top-16
-                  translate-y-[-400px] 
-                  peer-checked:translate-y-0
-                  transition-all duration-500">
-        <a href="#Home" class="text-white/50 hover:text-orange-400 font-bold text-xl">Home</a>
-        <a href="#about me" class="text-white/50 hover:text-orange-400 font-bold text-xl">About me</a>
-        <a href="#skills" class="text-white/50 hover:text-orange-400 font-bold text-xl">Skills</a>
-        <a href="#blog's" class="text-white/50 hover:text-orange-400 font-bold text-xl">Project</a>
-      </div>
-
-      <div class="hidden md:flex space-x-4 mr-3 justify-end gap-5">
-        <a href="#Home" class="text-white/50 hover:text-orange-400 font-bold text-xl">Home</a>
-        <a href="#about me" class="text-xl font-bold text-white/50 hover:text-orange-400">about me</a>
-        <a href="#skills" class="text-white/50 hover:text-orange-400 font-bold text-xl">Skills</a> 
-        <a href="#blog's" class="text-white/50 hover:text-orange-400 font-bold text-xl">Project</a> 
+      <div class="md:hidden">
+        <span class="text-xs tracking-widest uppercase text-gray-400">Menu</span>
       </div>
     </div>
   </nav>
-</header>
 
+  <!-- ══════════════════════════ HERO ══════════════════════════ -->
 
-<section id="Home" class="h-screen bg-cover bg-center bg-no-repeat bg-[url('images/keceh.jpg')]">
-  <div class="h-full flex items-center justify-center">
-    <div data-aos="fade-down" data-aos-duration="2000">
-      <div class="flex flex-col items-center justify-center gap-2 py-16 px-8 text-center max-w-2xl">
-        <h3 class="px-4 py-2 text-white font-bold text-2xl font-[poppins]">heyy i'm</h3>
-        <h1 class="animate-bounce rounded px-4 py-2 font-bold text-white text-4xl">
-          AL<span class="text-orange-400"> JUNA</span>ID
-        </h1>
-      </div>
-    </div>  
-  </div>
-</section>
+  <section
+  id="hero"
+  class="min-h-screen pt-20 flex flex-col justify-center relative overflow-hidden"
+  style="
+    background-image: url('image/6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
 
-<section id="about me" class="min-h-screen bg-orange-200 bg-fixed bg-cover bg-center bg-no-repeat flex flex-col md:flex-row items-center px-6 md:px-10 py-10">
-  <div class="md:w-3/4 w-full md:pr-8 md:text-left text-center mb-10 md:mb-0">
-    <h1 class="text-4xl font-bold mb-4 text-black animate-bounce">
-      About <span class="text-orange-500">Me</span>
+<div class="grid grid-cols-1 md:grid-cols-12 items-center min-h-[80vh]">
+
+  <!-- Left -->
+  <div class="md:col-span-3"></div>
+
+  <!-- Center -->
+
+<div class="md:col-span-6 flex flex-col items-center justify-center text-center mt-20">
+    <h1 class="text-7xl md:text-9xl font-black uppercase tracking-widest leading-none tracking-tighter text-gray-400">
+      JU <span class="text-white">| <span class="text-white">NA</span>
     </h1>
-    
-    <p class="text-lg text-black leading-relaxed mb-6">
-      Halo! guys nama saya ahmad nufail aljunaid bisa kalian panggil <strong>"Juna"</strong> <br>
-      berumur 15 tahun dan saya adalah seorang pelajar SMA kelas 10 di<br>
-      HSI Boarding School yang berada di purworejo. <br>
-      masih penasaran tentang saya kamu bisa melihat foto saya dan<br>
-      juga sosial media saya di bawah ini.
-    </p>
 
-    <div class="flex md:justify-start justify-center space-x-6 text-3xl text-white">
-      <a href="https://www.instagram.com/ahadamh.na/" target="_blank" class="hover:text-pink-500">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://wa.link/rocx16" class="hover:text-green-500" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-      <a href="https://www.youtube.com/@%D8%AB%D9%84%D8%A7%D8%AB%D8%A9%D8%A7%D9%84%D8%B4%D8%A7%D9%83%D8%B1%D9%8A%D9%86"
-      target="_blank" class="hover:text-red-500">
-        <i class="fa-brands fa-youtube"></i>
-      </a>
-      <a href="https://github.com/eljunenufail"
-      target="_blank" class="hover:text-black">
-        <i class="fa-brands fa-github"></i> 
-      </a>
+  </div>
+
+  <!-- Right -->
+  <div class="md:col-span-3"></div>
+
+</div>
     </div>
+  </section>
+
+
+  <!-- ══════════════════════════ ABOUT ME ══════════════════════════ -->
+
+<section class="min-h-screen bg-white px-6 md:px-12 lg:px-20 py-10 overflow-hidden">
+
+
+  <!-- Label -->
+  <div
+    data-aos="fade-right"
+    class="flex items-center gap-5 mb-16"
+  >
+    <span class="text-xs uppercase tracking-[0.3em] text-gray-400">
+      01 / About
+    </span>
+
+    <div class="h-px flex-1 bg-gray-200"></div>
   </div>
 
-  <div class="flex justify-center md:w-auto w-full" data-aos="fade-up" data-aos-duration="3000">
-    <img src="images/pp.png"
-      class="rounded-full object-cover w-48 h-48 md:w-60 md:h-60 transition-all duration-500 hover:brightness-150 hover:scale-110 hover:ring-8 hover:ring-white/70 hover:shadow-[0_0_40px_rgba(255,255,255,0.6)]">
-  </div>
-</section>
+  <!-- Content -->
+  <div class="grid lg:grid-cols-2 gap-20 items-center">
 
-<section id="skills" class="min-h-screen bg-orange-200 bg-fixed bg-cover bg-center bg-no-repeat">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 animate-bounce">
-      MY <span class="text-orange-500">Skills</span>
-
-    </h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
-      
-      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-        <h3 class="text-xl font-semibold text-gray-700 mb-2">HTML</h3>
-        <p class="text-gray-600">HTML (HyperText Markup Language) adalah kerangka atau struktur halaman web (konten, judul, paragraf, gambar)</p>
-        <div class="flex gap-1 mt-4">
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        </div>
-        <p class="flex justify-end font-bold text-orange-500">75%</p> 
-      </div>
-
-      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-        <h3 class="text-xl font-semibold text-gray-700 mb-2">CSS</h3>
-        <p class="text-gray-600">CSS (Cascading Style Sheets) adalah "desain" yang mempercantik tampilan elemen-elemen HTML tersebut (warna, font, layout) agar terlihat menarik dan profesional.</p>
-        <div class="flex gap-1 mt-4">
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        </div>
-        <p class="flex justify-end font-bold text-orange-500">75%</p> 
-      </div>
-
-      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-        <h3 class="text-xl font-semibold text-gray-700 mb-2">Tailwind CSS</h3>
-        <p class="text-gray-600">Tailwind CSS adalah framework CSS yang digunakan untuk membuat desain website dengan cepat menggunakan class siap pakai langsung di HTML..</p>
-        <div class="flex gap-1 mt-4">
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        </div>
-        <p class="flex justify-end font-bold text-orange-500">80%</p> 
-      </div>
-
-      <div class="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-        <h3 class="text-xl font-semibold text-gray-700 mb-2">Python</h3>
-        <p class="text-gray-600">>Python adalah bahasa yang kuat dan fleksibel yang memprioritaskan keterbacaan kode<br>
-                                  menjadikannya pilihan utama bagi pengembang pemula maupun profesional di berbagai industri modern.</p>
-        <div class="flex gap-1 mt-4">
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-500"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        <div class="w-2 h-2 rounded-full bg-orange-200"></div>
-        </div>
-        <p class="flex justify-end font-bold text-orange-500">75%</p> 
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="blog's" class="min-h-screen bg-orange-200 bg-fixed bg-cover bg-center bg-no-repeat">
-  <div class="w-full min-h-screen flex flex-col items-center p-6">
-    
-    <h2 class="text-3xl font-bold text-center text-black mb-3 animate-bounce">
-      MY <span class="text-orange-500">Project</span>
-    </h2>  
-
-    <p class="text-lg text-center text-black mb-10">
-      beberapa blog's tentang belajar web programming dan bahasa arab.
-    </p>  
-
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-      
-      <div data-aos="fade-down" tdata-aos-duraion="1000">
-        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-          <img src="https://images.unsplash.com/photo-1764509422504-f9aee0a1dd76"
-            class="w-full h-48 object-cover">
-          <div class="p-8 text-center">
-            <h3 class="text-xl font-semibold mb-3 text-orange-500">ARABIC'S</h3>
-            <p class="text-black/80 mb-5">Vlog dan video pembelajaran bahasa arab</p>
-            <a href="arabic's.html">
-              <button class="px-5 py-2 bg-black/10 backdrop-blur-lg text-white rounded-full hover:bg-yellow-500 transition">
-                bahasa arab
-              </button>  
-            </a>  
-          </div>  
-        </div>  
-      </div>
-
-      <div data-aos="fade-down" data-aos-duration="1000">
-        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
-            class="w-full h-48 object-cover">
-
-          <div class="p-8 text-center">
-            <h3 class="text-xl font-semibold mb-3 text-orange-500">IT</h3>
-            <p class="text-black/80 mb-5">Pembelajaran basic IT</p>
-            <a href="html.html">
-            <button class="px-5 py-2 bg-black/10 backdrop-blur-lg text-white rounded-full hover:bg-yellow-500 transition">
-              Project html
-            </button>  
-            </a>
-          </div>  
-        </div>  
-      </div>  
-      <div data-aos="fade-down" data-aos-duration="1000">
-        <div class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
-          <img src="https://images.unsplash.com/photo-1758506971683-c080e6f16ce9?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="w-full h-48 object-cover">
-
-          <div class="p-8 text-center">
-            <h3 class="text-xl font-semibold mb-3 text-orange-500">MY TASK ON MY DAY OFF</h3>
-            <p class="text-black/80 mb-5">kegiatan yang dilakukan saat libur</p>
-            <a href="task-my-day-off.html">
-            <button class="px-5 py-2 bg-black/10 backdrop-blur-lg text-white rounded-full hover:bg-yellow-500 transition">
-              Project task
-            </button>  
-            </a>
-          </div>  
-        </div>  
-      </div>  
-
-    </div>  
-  </div>  
-</section>
-
-<footer class="w-9xl bg-gray-700 text-white py-16 px-6">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-
+    <!-- Left -->
     <div>
-      <h2 class="text-3xl font-bold mb-6">Tentang kami</h2>
-      <div class="flex items-start gap-4">
-        <img src="images/gambar al juna.png" alt="Profile" class="w-28 h-28 rounded-full">
-        <p class="text-gray-200 leading-relaxed">
-        Website ini dibuat sebagai bagian dari hasil belajar kami selama 6 bulan di HSI Boarding School.<br>
-        Dari proses belajar tersebut,<br> kami mulai memahami dasar-dasar pembuatan website hingga akhirnya bisa membuat web seperti yang sedang kamu lihat sekarang.
-        <br>
-        <br>
-        Kami mengucapkan terima kasih kepada para guru dan seluruh pihak HSI Boarding School yang telah membimbing, mengarahkan, dan mendukung kami selama proses pembelajaran.<br>
-         Tanpa bimbingan dan kesabaran dari para guru, website ini tidak akan terwujud.
+
+      <h1
+        data-aos="fade-up"
+        class="text-5xl md:text-7xl font-black text-gray-900 uppercase mb-8"
+      >
+        About Me
+      </h1>
+
+      <p
+        data-aos="fade-up"
+        data-aos-delay="100"
+        class="text-gray-500 leading-relaxed max-w-xl mb-6"
+      >
+        Halo! Saya Ahmad Nufail Aljunaid, pelajar kelas 10 HSI Boarding School
+        Purworejo yang memiliki ketertarikan besar dalam dunia teknologi dan
+        pengembangan website.
+      </p>
+
+      <p
+        data-aos="fade-up"
+        data-aos-delay="200"
+        class="text-gray-500 leading-relaxed max-w-xl mb-12"
+      >
+        Saya telah mempelajari HTML, CSS, Tailwind CSS, JavaScript dan Python
+        serta membangun berbagai proyek web modern sebagai sarana belajar dan
+        pengembangan kemampuan.
+      </p>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 gap-10">
+
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <h2 class="text-5xl font-bold text-gray-900">
+            12+
+          </h2>
+
+          <p class="text-gray-500 mt-2">
+            Bulan Belajar
+          </p>
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <h2 class="text-5xl font-bold text-gray-900">
+            5+
+          </h2>
+
+          <p class="text-gray-500 mt-2">
+            Project Selesai
+          </p>
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <h2 class="text-5xl font-bold text-gray-900">
+            5+
+          </h2>
+
+          <p class="text-gray-500 mt-2">
+            Teknologi
+          </p>
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <h2 class="text-5xl font-bold text-gray-900">
+            100%
+          </h2>
+
+          <p class="text-gray-500 mt-2">
+            Semangat Belajar
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right -->
+    <div
+      data-aos="fade-left"
+      data-aos-duration="1200"
+      class="relative"
+    >
+
+      <img
+        src="image/jun.png"
+        class="w-full h-[400px] md:h-[700px] object-cover"
+      >
+
+      <div class="absolute top-6 right-6 text-5xl text-white">
+        ↗
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- ══════════════════════════ SKILLS ══════════════════════════ -->
+  <section id="skills" class="py-24 md:py-32 border-b border-gray-200 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="flex items-center gap-4 mb-16" data-aos="fade-up" data-aos-duration="500">
+        <span class="text-xs tracking-widest uppercase text-gray-400">02 / Skills</span>
+        <div class="flex-1 h-px bg-gray-200"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+
+        <!-- Left: Heading -->
+        <div class="md:col-span-4" data-aos="fade-up" data-aos-duration="600">
+          <h2 class="text-5xl md:text-6xl font-black uppercase leading-none tracking-tighter text-gray-900">
+            MY<br />SKILLS
+          </h2>
+          <p class="mt-6 text-sm text-gray-500 leading-relaxed max-w-xs">
+            Teknologi yang saya kuasai selama 6 bulan belajar secara intensif di HSI Boarding School.
+          </p>
+        </div>
+
+        <!-- Right: Skill Cards -->
+        <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <!-- HTML -->
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-sm font-semibold text-gray-900 tracking-wide uppercase">HTML</span>
+              <span class="text-xs text-gray-400 font-mono">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5">
+              <div class="bg-gray-800 h-1.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <p class="mt-4 text-xs text-gray-400 leading-relaxed">Struktur & semantik dokumen web.</p>
+          </div>
+
+          <!-- CSS -->
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-sm font-semibold text-gray-900 tracking-wide uppercase">CSS</span>
+              <span class="text-xs text-gray-400 font-mono">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5">
+              <div class="bg-gray-800 h-1.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <p class="mt-4 text-xs text-gray-400 leading-relaxed">Styling, layout, dan visual web.</p>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-sm font-semibold text-gray-900 tracking-wide uppercase">Tailwind CSS</span>
+              <span class="text-xs text-gray-400 font-mono">80%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5">
+              <div class="bg-gray-800 h-1.5 rounded-full" style="width: 80%"></div>
+            </div>
+            <p class="mt-4 text-xs text-gray-400 leading-relaxed">Utility-first CSS framework modern.</p>
+          </div>
+
+          <!-- Python -->
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-sm font-semibold text-gray-900 tracking-wide uppercase">Python</span>
+              <span class="text-xs text-gray-400 font-mono">75%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5">
+              <div class="bg-gray-800 h-1.5 rounded-full" style="width: 75%"></div>
+            </div>
+            <p class="mt-4 text-xs text-gray-400 leading-relaxed">Logika, automasi, dan scripting dasar.</p>
+          </div>
+
+          <!-- Python oop -->
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-sm font-semibold text-gray-900 tracking-wide uppercase">OOP</span>
+              <span class="text-xs text-gray-400 font-mono">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5">
+              <div class="bg-gray-800 h-1.5 rounded-full" style="width: 90%"></div>
+            </div>
+            <p class="mt-4 text-xs text-gray-400 leading-relaxed">Fleksibilitas,Keamanan Data, dan  kompleks.</p>
+          </div>
+
+          <!-- Django -->
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-sm font-semibold text-gray-900 tracking-wide uppercase">Django</span>
+              <span class="text-xs text-gray-400 font-mono">88%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-1.5">
+              <div class="bg-gray-800 h-1.5 rounded-full" style="width: 88%"></div>
+            </div>
+            <p class="mt-4 text-xs text-gray-400 leading-relaxed">Manajemen Database, Pemisahan Logika (MTV), dan Keamanan Kuat.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════ PROJECTS ══════════════════════════ -->
+<section id="projects" class="bg-black min-h-screen flex items-center justify-center px-4">
+    <div class="relative w-full max-w-6xl">
+
+        <!-- Grid -->
+        <div class="grid grid-cols-12 auto-rows-[80px] gap-2">
+
+            <!-- kiri atas besar -->
+            <div class="col-span-4 row-span-3 overflow-hidden">
+                <img src="image/6.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+
+            <!-- tengah atas -->
+            <div class="col-span-3 row-span-2 overflow-hidden">
+                <img src="image/3.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+
+            <!-- kanan atas -->
+            <div class="col-span-3 row-span-3 overflow-hidden">
+                <img src="image/1.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+
+            <!-- kiri bawah -->
+            <div class="col-span-3 row-span-2 overflow-hidden">
+                <img src="image/jun.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+
+            <!-- tengah bawah -->
+            <div class="col-span-2 row-span-2 overflow-hidden">
+                <img src="image/5.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+            <!-- tengah bawah -->
+            <div class="col-span-2 row-span-2 overflow-hidden">
+                <img src="image/juun.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+
+            <!-- kanan bawah -->
+            <div class="col-span-4 row-span-2 overflow-hidden">
+                <img src="image/2.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+            <!-- kanan bawah -->
+            <div class="col-span-4 row-span-2 overflow-hidden">
+                <img src="image/4.png"
+                    class="w-full h-full object-cover grayscale">
+            </div>
+
+        </div>
+
+        <!-- TEXT TENGAH -->
+        <div
+            class="absolute inset-0 flex items-center justify-center pointer-events-none">
+
+            <h1 class="text-white font-black leading-none text-center
+                       text-5xl md:text-8xl">
+                MY <br>
+                PROJECT
+            </h1>
+
+        </div>
+
+        <!-- LINK KANAN BAWAH -->
+        <a href="project.html"
+           class="absolute bottom-5 right-5 text-white flex items-center gap-2 group">
+
+            <span class="uppercase tracking-widest text-sm">
+                View All Projects
+            </span>
+
+            <svg
+                class="w-5 h-5 transition-transform group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+
+                <path stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"/>
+
+            </svg>
+
+        </a>
+
+    </div>
+</section>
+
+  <!-- ══════════════════════════ FOOTER ══════════════════════════ -->
+  <footer id="footer" class="bg-white border-t border-gray-200 pt-16 pb-10">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Top footer grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-gray-100">
+
+        <!-- Brand col -->
+        <div class="md:col-span-4" data-aos="fade-up" data-aos-duration="500">
+          <p class="text-xs tracking-widest uppercase font-semibold text-gray-900 mb-4">AL JUNAID</p>
+          <p class="text-xs text-gray-500 leading-relaxed max-w-xs">
+            Website ini dibuat sebagai bagian dari hasil belajar selama 6 bulan di HSI Boarding School — dari dasar HTML hingga website yang sedang kamu baca sekarang.
+          </p>
+        </div>
+
+        <!-- Navigation col -->
+        <div class="md:col-span-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+          <p class="text-xs tracking-widest uppercase text-gray-400 mb-5">Halaman</p>
+          <ul class="space-y-3">
+            <li><a href="#hero" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">Home</a></li>
+            <li><a href="#about" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">About</a></li>
+            <li><a href="#skills" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">Skills</a></li>
+            <li><a href="#projects" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">Projects</a></li>
+            <li><a href="arabic's.html" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">Arabic's</a></li>
+            <li><a href="html.html" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">IT Project</a></li>
+            <li><a href="task-my-day-off.html" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">Task Day Off</a></li>
+            <li><a href="pelajaran-ramdhan.html" class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">Hikmah Ramadhan</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact col -->
+        <div class="md:col-span-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+          <p class="text-xs tracking-widest uppercase text-gray-400 mb-5">Contact</p>
+          <ul class="space-y-3">
+            <li>
+              <a href="https://www.instagram.com/ahadamh.na/" target="_blank" rel="noopener noreferrer"
+                 class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">
+                Instagram ↗
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.link/rocx16" target="_blank" rel="noopener noreferrer"
+                 class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">
+                WhatsApp ↗
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@ثلاثةالشاكرين" target="_blank" rel="noopener noreferrer"
+                 class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">
+                YouTube ↗
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/eljunenufail" target="_blank" rel="noopener noreferrer"
+                 class="text-xs text-gray-500 hover:text-gray-900 transition-colors duration-200 tracking-wide">
+                GitHub ↗
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Ucapan col -->
+        <div class="md:col-span-2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+          <p class="text-xs tracking-widest uppercase text-gray-400 mb-5">Terima Kasih</p>
+          <p class="text-xs text-gray-500 leading-relaxed">
+            Kepada guru IT: <strong class="text-gray-700">Andy Nur, Daffa, dan Hamka Rifai</strong> atas bimbingan dan ilmunya. Juga kepada <strong class="text-gray-700">kedua orang tua</strong> atas doa dan dukungan yang tak ternilai.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom footer -->
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-8">
+        <p class="text-xs text-gray-400 tracking-wide">
+          © 2025 Ahmad Nufail Aljunaid. All rights reserved.
         </p>
+        <a href="#hero" class="text-xs tracking-widest uppercase text-gray-400 hover:text-gray-900 transition-colors duration-200">
+          ↑ Kembali ke Atas
+        </a>
       </div>
+
     </div>
+  </footer>
 
-    <div>
-      <h2 class="text-3xl font-bold mb-6">Pesan & Kesan</h2>
-      <p class="text-gray-200 leading-relaxed mb-3">
-         Saya sangat bersyukur bisa belajar IT dan web programming serta membuat website ini
-    sebagai bagian dari proses belajar saya.
-      </p>
-      <p class="text-gray-200 leading-relaxed mb-3">
-    Terima kasih kepada guru IT:
-    <span class="font-semibold text-orange-400">
-      Andy Nur, Daffa, dan Hamka Rifai
-    </span>
-    atas bimbingan dan ilmunya.
-  </p>
-
-  <p class="text-gray-200 leading-relaxed">
-    Terima kasih yang sebesar-besarnya juga untuk
-    <span class="font-semibold text-orange-400">
-      kedua orang tua
-    </span>
-    saya atas doa dan dukungannya.
-  </p>
-    </div>
-
-    <div>
-      <h2 class="text-3xl font-bold mb-6">CONTACT</h2>
-      <p class="text-gray-200 leading-relaxed mb-4">
-         Jangan ragu untuk menghubungi saya melalui sosial media di bawah ini
-      untuk diskusi, saran, atau sekadar berkenalan
-      </p>
-
-      <div class="items-center gap-4 mt-4">
-        <div class="flex space-x-6 text-white">
-          <a href="https://www.instagram.com/ahadamh.na/" target="_blank" class="flex items-center gap-2 text-3xl hover:text-pink-500">
-            <i class="fa-brands fa-instagram"></i>
-            <span class="text-base">@ahadamh.na</span>
-          </a>
-          <a href="https://wa.link/rocx16" target="_blank" class="flex items-center gap-2 text-3xl hover:text-green-500">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span class="text-base">+62 881-1494-048</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <!-- AOS Init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 
 </body>
 </html>
